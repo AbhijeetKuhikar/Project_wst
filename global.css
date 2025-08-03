@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --darkHex: #1E1E2F;         /* Deep Navy - base dark background */
-    --accent1Hex: #2D3142;      /* Charcoal Blue - content sections */
-    --accent2Hex: #0077B6;      /* Sky Blue - primary accent/action */
-    --accent3Hex: #00B4D8;      /* Aqua Blue - secondary accent */
-    --lightHex: #F4F6F8;        /* Light Gray - background or text */
+    --darkHex: #1A1C1F;      
+    --accent1Hex: #2E3A59;    
+    --accent2Hex: #4F86C6;    
+    --accent3Hex: #A8D0E6;    
+    --lightHex: #F4F7FA;     
 
-    --darkRGB: 30, 30, 47;
-    --accent1RGB: 45, 49, 66;
-    --accent2RGB: 0, 119, 182;
-    --accent3RGB: 0, 180, 216;
-    --lightRGB: 244, 246, 248;
+--darkRGB: 26, 28, 31;
+--accent1RGB: 46, 58, 89;
+--accent2RGB: 79, 134, 198;
+--accent3RGB: 168, 208, 230;
+--lightRGB: 244, 247, 250;
+
 }
 
 body {
