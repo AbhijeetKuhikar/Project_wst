@@ -1,161 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Site</title>
-    <link rel="stylesheet" href="./vendors/bootstrap-5.3.7-dist/css/bootstrap.css">
-    <script src="./vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./vendors/fontawesome-free-7.0.0-web/css/all.css">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My_Portfolio</title>
+  <link rel="stylesheet" href="./vendors/bootstrap-5.3.7-dist/css/bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link rel="stylesheet" href="./style.css" />
 </head>
+<body>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
 
-    <header id="header" class="position-sticky top-0 z-3">
-        <div class="container-fluid bg-light shadow">
-            <div class="container">
-                <nav id="navbar" class="navbar navbar-expand-md navbar-light">
-                    <div class="navbar-brand d-flex gap-1">
-                        <div class="bg-dark rounded-circle position-relative" style="width: 40px; height: 40px;">
-                            <i id="logo1" style="color: white;"  class="fa-regular fa-house"></i>
-                        </div>
-                        <span class="fw-bolder text-dark fs-4">
-                            AJ Enterprises
-                        </span>
-                    </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Abhijeet Kuhikar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                    <button data-bs-toggle="offcanvas" data-bs-target="#main-menu"
-                        class="navbar-toggler bg-dark text-light">
-                        <span class="navbar-toggler-icon bg-light rounded"></span>
-                        <span class="fw-bolder">Menu</span>
-                    </button>
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Abhijeet Kuhikar</h1>
+      <p class="lead">Web Developer | Software Engineer | Freelancer</p>
+    </div>
+  </header>
 
-                    <div class="offcanvas offcanvas-start" id="main-menu">
-                        <div class="d-block d-md-none offcanvas-header bg-dark d-flex justify-content-between">
-                            <span class="text-light">Main Menu</span>
-                            <button class="btn btn-close bg-light" data-bs-dismiss="offcanvas"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav ms-auto gap-4 nav-pills">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#hero">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#faq">Address</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#blog">Blog</a>
-                                </li>
-                                <li>
-                                    <button class="navbar-cta">JOIN NOW !</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row">
+        <div id="urpic"  class="col-md-6">
+          <img src="" alt="About me" class="img-fluid rounded">
         </div>
-    </header>
-    <section id="hero">
-        <div class="container-fluid p-0">
-            <div class="container-fluid hero-section position-relative">
-                <div class="carousel carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="img-fluid" src="./media/image1.jpg" alt="">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="img-fluid" src="./media/image2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="data container">
-                        <div class="text d-flex align-items-center text-light-custom">
-                            <div class="">
-                                <div class="title fs-1 d-flex flex-column gap-2">
-                                    <span class="text-accent3 fw-bolder">Hello ! <span class="text-light-custom"> I'm
-                                            Abhijeet Kuhikar.</span></span>
-                                    <span>
-                                        AJ Enterprise Owner..!
-                                    </span>
-                                </div>
-                                <div class="short-title fs-3 d-flex flex-column gap-2">
-                                    <span>
-                                        I can help you with
-                                    </span>
-                                    <span class="fw-bolder">
-                                        Building Start-up's | Digital Marketing
-                                    </span>
-                                </div>
-                                <div class="discription">
-                                    <p class="text-light-custom opacity-50">Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing elit. Atque eaque, maxime eius repellendus saepe officiis vero,
-                                        assumenda optio beatae accusantium dolorem voluptatibus cupiditate consectetur
-                                        sint deleniti? Voluptatibus ipsum soluta veritatis.</p>
-                                </div>
-                                <div class="hero-cta">
-                                    <button class="navbar-cta">JOIN NOW !</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <img class="img-fluid" src="./media/hero-image-3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6">
+          <p>Hello! I'm a front-end web developer based in Nagpur, Maharashtra, India. I specialize in creating clean, responsive websites and love turning creative ideas into functional digital experiences.</p>
+          <p>With 3+ years of experience, I’ve worked on projects ranging from portfolio sites to full-scale web apps. I’m passionate about building things that make the web better.</p>
         </div>
-    </section>
-    <section id="about">
-        <div class="container-fluid bg-dark-custom p-5">
-            <div class="container">
-                <div class="perk-section">
-                    <div class="text-data text-light">
-                        <h1 class="fw-bolder">
-                            <span class="d-block">We Shape</span> ThePerfect Solutions
-                        </h1>
-                        <p>
-                            A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
-                            mouth.
-                        </p>
-                    </div>
-                    <div class="tile tile-1">
-                        <div class="icon">
-                            <img src="./media/icon1.png" alt="">
-                        </div>
-                        <div class="title text-light">
-                            Digital Product
-                        </div>
-                    </div>
-                    <div class="tile tile-2"></div>
-                    <div class="tile tile-3"></div>
-                    <div class="tile tile-4"></div>
-                    <div class="tile tile-5"></div>
-                    <div class="tile tile-6"></div>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3"><div class="p-3 border bg-light">HTML</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light">CSS</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light">Bootstrap</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light">JavaScript</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light mt-3">GitHub</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light mt-3">React-(Basics)</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light mt-3">C, C++</div></div>
+        <div class="col-md-3"><div class="p-3 border bg-light mt-3">JAVA, PYTHON</div></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div  class="card">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos mollitia expedita harum quam temporibus et eaque quidem? Ab, velit?</p>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="faq"></section>
-    <section id="services"></section>
-    <section id="portfolio"></section>
-    <section id="blog"></section>
-    <footer id="footer"></footer>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga quos nam. Qui quibusdam modi rerum molestiae! Nulla, ea fugiat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea nam id cum rem excepturi doloribus deserunt exercitationem laboriosam? Debitis?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"Abhijeet Kuhikar did an amazing job on our website. Professional, responsive, and creative!"</p>
+            <footer class="blockquote-footer">ZEB COMPUTERS, <cite title="Company">Company</cite></footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>"Absolutely love the results. Will definitely work together again."</p>
+            <footer class="blockquote-footer">Another Client, <cite title="Company">Startup</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-5">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-5">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-md-10">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-md-10 text-center">
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 [Your Name]. All rights reserved. | Built with HTML, CSS & Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
