@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My_Portfolio</title>
   <link rel="stylesheet" href="./vendors/bootstrap-5.3.7-dist/css/bootstrap.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./vendors/fontawesome-free-7.0.0-web/css/all.css">
 
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
+<body class="bg-secondary-subtle">
 
 
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
+      <div class="bg-light rounded-circle position-relative" style="width: 40px; height: 40px;">
+        <i id="logo" class="fa-solid fa-user-tie"></i>
+      </div>
       <a class="navbar-brand" href="#">Abhijeet Kuhikar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -31,31 +35,31 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
+
+  <header class="bg-secondary text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">Hi, I'm Abhijeet Kuhikar</h1>
       <p class="lead">Web Developer | Software Engineer | Freelancer</p>
     </div>
   </header>
 
-  <!-- About Section -->
   <section id="about" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">About Me</h2>
       <div class="row">
         <div id="urpic"  class="col-md-6">
-          <img src="" alt="About me" class="img-fluid rounded">
+          <img src="./media/main.webp" alt="About me" class="img-fluid rounded">
         </div>
         <div class="col-md-6">
-          <p>Hello! I'm a front-end web developer based in Nagpur, Maharashtra, India. I specialize in creating clean, responsive websites and love turning creative ideas into functional digital experiences.</p>
+          <p>Hello! I'm a Full-stack web developer based in Nagpur, Maharashtra, India. I specialize in creating clean, responsive websites and love turning creative ideas into functional digital experiences.</p>
           <p>With 3+ years of experience, I’ve worked on projects ranging from portfolio sites to full-scale web apps. I’m passionate about building things that make the web better.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis nemo repudiandae, harum, voluptas, in accusamus dolorem vitae itaque vero aliquam ab dicta! Non veritatis nobis voluptatem? Tempore, rerum nemo! Qui earum suscipit perspiciatis vel molestiae eos eaque repellendus accusantium natus. Dolorum, quas? Obcaecati saepe animi, illo quod voluptate enim magnam facere labore laboriosam iure nam iste, exercitationem, autem molestiae inventore nemo impedit architecto a adipisci nobis velit amet dolor quia? Ut, ullam quo eos, quas inventore earum recusandae nihil, nemo perspiciatis libero sunt ea. Provident dolores asperiores cumque, quos reprehenderit hic, eaque quidem sed minima nulla adipisci vitae deleniti!
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Skills</h2>
@@ -72,35 +76,58 @@
     </div>
   </section>
 
+  <section id="Skills2" class="py-5">
+    <div class="container">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">~SKILLS~
+      C
+      C++
+      JAVA
+      PYTHON
+      HTML
+      CSS
+      JavaScript
+      React
+      MONGO DB
+  </div>
+</div>
+</div>
+  </section>
+      
   
-  <!-- Portfolio Section -->
   <section id="portfolio" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">My Portfolio</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div  class="card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 1">
+            <img src="./media/e-commerce.png" class="card-img-top" alt="Project 1">
             <div class="card-body">
-              <h5 class="card-title">Project One</h5>
+              <h5 class="card-title">E-Commerce Site</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos mollitia expedita harum quam temporibus et eaque quidem? Ab, velit?</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 2">
+            <img src="./media/amazonclone.webp" class="card-img-top" alt="Project 2">
             <div class="card-body">
-              <h5 class="card-title">Project Two</h5>
+              <h5 class="card-title">Amazon Clone</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga quos nam. Qui quibusdam modi rerum molestiae! Nulla, ea fugiat.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 3">
+            <img src="./media/netclone.png" class="card-img-top" alt="Project 3">
             <div class="card-body">
-              <h5 class="card-title">Project Three</h5>
+              <h5 class="card-title">Netflix Clone</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea nam id cum rem excepturi doloribus deserunt exercitationem laboriosam? Debitis?</p>
             </div>
           </div>
@@ -109,7 +136,7 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  
   <section id="testimonials" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Testimonials</h2>
@@ -123,14 +150,13 @@
         <div class="col-md-6">
           <blockquote class="blockquote">
             <p>"Absolutely love the results. Will definitely work together again."</p>
-            <footer class="blockquote-footer">Another Client, <cite title="Company">Startup</cite></footer>
+            <footer class="blockquote-footer">Disha Computers, <cite title="Company">Nagpur</cite></footer>
           </blockquote>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Contact Me</h2>
@@ -145,17 +171,15 @@
           <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
         </div>
         <div class="col-md-10 text-center">
-          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+          <button type="submit" class="btn btn-secondary px-4">Send Message</button>
         </div>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 [Your Name]. All rights reserved. | Built with HTML, CSS & Bootstrap</p>
+    <p class="mb-0"> Created by Abhijeet Kuhikar. All rights reserved. @2025</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
